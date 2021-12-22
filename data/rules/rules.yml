@@ -1,0 +1,21 @@
+version: "2.0"
+rules:
+#- rule: ask_house_type
+#  steps:
+#  - intent: mobile_home
+#  - action: utter_acre
+- rule: respond to chitchat
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+- rule: out-of-scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+- rule: fallback
+  steps:
+  - intent: fallback
+  - action: utter_fallback
+#- rule: gatherData
+#  steps:
+#  - action: action_gather_data

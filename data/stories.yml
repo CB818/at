@@ -1,0 +1,150 @@
+version: "2.0"
+stories:
+- story: Auto Transport
+  steps:
+  - intent: Intro
+  - checkpoint: nm
+  - action: utter_Autotrans
+  - checkpoint: hw
+  - intent: mood_great
+  - checkpoint: company
+  - action: utter_soundsgood
+  - checkpoint: ques
+  - action: utter_vehicle
+  - checkpoint: whn
+  - intent: affirm
+  - checkpoint: conf
+ # - checkpoint: waitm
+ # - action: utter_awesome
+ # - intent: complete_process
+  #- action: utter_takestime
+  - action: utter_trperson
+  - checkpoint: cb
+  - intent: affirm
+  - checkpoint: quick
+  - action: utter_tr
+# - story: wait
+#   steps:
+#   - intent: wait_moment
+#   - action: utter_wait_moment
+#   - intent: affirm
+#   - checkpoint: waitm
+- story: rebuttals
+  steps:
+  - intent: Rebuttals
+  - action: utter_later
+  - intent: affirm
+  - action: utter_anyques
+  - intent: pic
+  - action: utter_loc
+  - intent: price
+  - action: utter_price
+  - intent: affirm
+- story: reb2
+  steps:
+  - intent: repeat
+  - action: utter_company
+  - intent: shift
+  - action: utter_takestime
+  - intent: Insured
+  - action: utter_insured
+  - intent: Quote
+  - action: utter_factor
+- story: unhappy
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - checkpoint: ques
+- story: reason_call
+  steps:
+  - intent: never_mind
+  - action: utter_agent_name
+  - action: utter_reason
+  - intent: affirm
+  - checkpoint: nm
+- story: denial
+  steps:
+  - intent: deny
+  - action: utter_notqual
+- story: scam
+  steps:
+  - intent: scam
+  - action: utter_scam
+- story: thirdparty
+  steps: 
+  - intent: thirdparty
+  - action: utter_thirdparty
+  - intent: pass
+  - action: utter_wait_moment
+- story: thirdpartylater
+  steps:
+  - intent: later
+  - action: utter_surelater
+- story: wastetime # angry user
+  steps:
+  - intent: stop_disturbance
+  - action: utter_sorry
+  - action: utter_niceday
+- story: whichcomp #
+  steps:
+  - checkpoint: feeble
+  - intent: whichcompany
+  - action: utter_company
+  - intent: affirm
+  - action: utter_alright
+  - checkpoint: company 
+- story: callback # users asks if they will be getting a callback
+  steps:
+  - intent: call_back
+  - action: utter_callback
+  - checkpoint: cb
+- story: quick_fm # make it quick
+  steps:
+  - intent: quick
+  - action: utter_quick
+  - intent: affirm
+  - checkpoint: quick
+- story: Transfer #The user wants the call to be transfered to the representative
+  steps:
+  - intent: Connectme
+  - action: utter_Connectme
+- story: deny_anyques # anyquestion?
+  steps:
+  - action: utter_anyques
+  - intent: deny
+  - action: utter_niceday
+- story: when # user asks when they got their details
+  steps:
+  - intent: when
+  - action: utter_when
+  - checkpoint: whn
+- story: how # user asks bot as to how it got their details
+  steps:
+  - intent: how
+  - action: utter_how
+  - intent: affirm
+  - checkpoint: hw
+- story: confusion # user is confused/lost and bot makes them understand
+  steps:
+  - intent: confused
+  - action: utter_confusion
+  - intent: affirm
+  - checkpoint: conf
+- story: couldnthear # User saying to the bot that voice is feeble
+  steps:
+  - intent: feeble
+  - action: utter_feeble # bot repeats
+  - checkpoint: feeble
+- story: whouwant # User asks the bot whom it wants to talk to regarding request
+  steps:
+  - intent: whospeak
+  - action: utter_whospeak
+  - intent: affirm
+  - action: utter_passing # passing the line to concerned person
+  - intent: pass
+  - action: utter_wait_moment
+- story: shouldiwait
+  steps:
+  - intent: need_wait
+  - action: utter_need_wait
+  - intent: affirm

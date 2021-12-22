@@ -1,0 +1,1622 @@
+version: "2.0"
+nlu:
+# - intent: goodbye
+#   examples: |
+#     - good afternoon
+#     - cu
+#     - good by
+#     - cee you later
+#     - good night
+#     - bye
+#     - goodbye
+#     - have a nice day
+#     - see you around
+#     - bye bye
+#     - see you later
+- intent: help
+  examples: |
+    - i need help
+    - please help me
+    - i have doubt
+- intent: affirm
+  examples: |
+    - yes
+    - yep
+    - indeed
+    - okay
+    - sure
+    - sure thing
+    - ofcourse
+    - that sounds good
+    - That's fine
+    - correct
+    - ok
+    - yes, please
+    - no problem
+    - i am
+    - yes i guess
+    - Perfect
+    - sounds perfect
+    - Awesome
+    - hallelujah
+    - Yes
+    - Ya
+    - Yup
+    - YAAAAAS
+    - Totally
+    - Totes
+    - Sure
+    - sure go ahead
+    - sure i don't mind
+    - Sounds like a plan
+    - Good idea
+    - absolutely
+    - mkay
+    - right
+    - exactly
+    - yebo
+    - precisely
+    - yes it does
+    - yep i would be interested
+    - i would be interested
+    - i am interested
+    - i need to ship my vehicle
+    - What are my options when it comes to the timing of my shipment
+    - yes it is
+    - you're on
+    - i havent moved my vehicle yet
+    - i have not moved the vehicle yet
+    - i want to move the vehicle
+    - i am yet to move the vehicle
+    - i should move the vehicle hereafter only
+    - uh huh
+    - naturally
+    - i don't mind if i do
+    - by all means
+    - You bet
+    - wait a minute
+    - wait
+    - okay sure
+    - can you please give me a moment
+    - can you just hold on, i am getting another call
+    - just a moment please
+    - well give me a moment
+    - OK
+    - K
+    - Okay
+    - Okie dokie
+    - Alright
+    - Alrighty
+    - Sounds good
+    - For sure
+    - Sure thing
+    - Certainly
+    - Definitely
+    - Of course
+    - Gladly
+- intent: deny
+  examples: |
+    - no
+    - n
+    - NOOOOOOOO
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - i dont have a vehicle
+    - i dont have a car
+    - not interested
+    - i dont
+    - not at all
+    - not really
+    - stop
+    - ofcourse not
+    - nope
+    - not
+    - nope not until now
+- intent: scam
+  examples: |
+    - is this a scam call
+    - are you calling just to bother me
+    - scam
+    - useless call
+- intent: whichcompany
+  examples: |
+    - who do you work with?
+    - what is the company you said
+    - what is the name of the company
+    - can you tell the name of the company
+    - you are calling from?
+    - sorry what was the name of the company again?
+    - you are calling from?
+    - who
+    - WHO
+    - what?
+    - what
+    - can you please repeat the name of the company
+- intent: thirdparty
+  examples: |
+    - i dont take care of these
+    - my husband takes care of these
+    - my wife takes care of these
+    - my spouse takes care of these
+    - i dont know much about these
+    - my son handles these
+    - my daughter handles all the things
+    - oh it might be my wife
+    - oh it might be my husband
+    - my wife would have requested
+    - my husband would have requested
+    - my son would have requested
+    - my daughter would have requested
+    - it might be my wife
+    - it might be my husband
+    - my husband would have requested
+    - my wife would have requested
+    - i didnt request anything
+    - it wasnt me
+- intent: feeble
+  examples: |
+    - okay gabby but i couldn't hear you properly
+    - your voice is too low gabby
+    - i couldn't hear anything that you say
+    - you are not audible
+    - hello are you on the line
+    - i think there is some disturbance in the line
+    - can you speak loudly i couldn't hear you
+    - can you speak loudly
+    - can you repeat what you said i couldnt hear you
+    - i couldn't hear you, i have hearing problem
+    - i couldn't hear you gabby
+    - hello hello who is on the line can you hear me
+    - i didnt  understand that
+    - i couldn't get that
+    - what was that again
+    - your voice is feeble
+    - i can't hear you
+    - you are talking low
+    - my network is not good
+    - my service is not good
+    - my signal is not good
+    - there is disturbance in the line
+- intent: mood_great
+  examples: |
+    - great, how about you
+    - good, how are you?
+    - amazing
+    - i am doing good, How about you?
+    - good as always
+    - feeling like a king
+    - i am good, sup
+    - wonderful
+    - I am feeling very good
+    - I am great, how about you
+    - i am great how about you
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - i am fine
+    - GOOD
+    - good good
+    - great
+    - GREAT
+    - sup
+    - i am good sup
+    - wassup
+    - well am fine, how about you
+    - awesome
+    - frantastic
+    - I am well
+    - frantabulous
+    - fine
+    - just doing ok, what about you?
+    - just another day, how is it going there?
+    - hanging in there, How about you?
+    - i am doing good, how are you
+    - i am great, how about you
+    - how about you?
+    - i am good
+    - good
+    - not bad. what about you
+    - I am doing fine
+    - I'm fine thank you.
+    - I feel great / marvellous / fine.
+    - Couldn't be better.
+    - Fit as a fiddle.
+    - Very well, thanks.
+    - Okay.
+    - Not bad.
+    - Not too shabby.
+    - Can't complain.
+    - Pretty good.
+    - I'm good.
+    - I'm doing well.
+    - I'm okay (or OK).
+    - I'm alright
+    - i am ok
+    - i am all right
+    - i am over the moon
+    - pretty good
+    - couldn't be better
+    - doing okey dokey
+    - i am on cloud nine
+    - i am well
+    - i feel fine
+    - i'm doin' good
+    - i'm peachy
+    - on the top of the world
+    - feel just fine
+    - feels well
+    - hokie dokie
+    - i all right
+    - i am a-okay
+    - i am alive
+    - i am cool
+    - i am doin' good
+    - i am doing all right
+    - i am doing well
+    - i am good how about you
+    - i am great
+    - i am happy
+    - i am okay, what about you
+    - i am okay how about you
+    - i am peachy
+    - i am pretty good
+    - i are fine
+    - i feel bad
+    - i feel good
+    - i feel marvellous
+    - i feel real good
+    - i feel really sad
+    - i feel sad
+    - i have problems
+    - i look fine
+    - i was okay
+    - i will be well
+    - i'm a-okay
+    - i'm alive
+    - i'm all right
+    - i'm doing all right
+    - i'm doing fine
+    - i'm doing great
+    - i'm doing well
+    - i'm fine
+    - i'm good
+    - i'm great
+    - I am fine, How are you?
+    - I am good, how are you?
+    - i am great, How about you?
+    - frantabulous, How about you?
+    - not bad, How are you
+    - not bad. How are you
+    - not bad, what about you
+    - I am doing fine how about you?
+    - I'm fine thank you
+    - Couldn't be better, how about you
+    - How are you doing
+    - Much better.
+    - All the better for seeing you.
+    - great how about you
+- intent: wait_moment
+  examples: |
+    - wait a moment
+    - let me think, wait a moment
+    - let me confirm, can you please wait
+    - can you give me a moment
+    - sure, let me confirm
+    - can me hold on, i will confirm
+- intent: complete_process
+  examples: |
+    - how long it will take to complete the task
+    - how long the entire process will take?
+    - can you do it immidiately
+    - i was checking that on your website. How long you usually take to ship the vehicle
+    - can you complete the entire process by today?
+    - will it be done in a single day?
+    - please help with this shipment as soon as possible
+- intent: call_back
+  examples: |
+    - will i get a call back
+    - will i be getting a call back
+    - will i be receiving a call from you again
+    - so when can i expect your call again
+    - call back
+    - call again
+- intent: when
+  examples: |
+    - when
+    - when did you get my details
+    - when did i request
+    - i dont remember myself
+    - i forgot when i requested
+    - what do you want
+    - why are you calling
+    - is there anything i can help you with?
+- intent: pass
+  examples: |
+    - wait i will pass over the line to my wife
+    - wait i will pass the line
+    - i will put them on the phone
+    - i will put my husband on the phone
+    - i will put my wife on the phone
+    - i will give the phone to the concerned person
+- intent: how
+  examples: |
+    - how
+    - how did you get my details
+    - how is it possible
+    - how it happened
+    - how you got my number
+- intent: stop_disturbance
+  examples: |
+    - i dont really want to talk to you
+    - stop disturbing me
+    - whatever, will you not disturb me again please
+    - not interested
+    - not required
+    - please drop the call
+    - you people are a waste of time
+    - please dont waste my time
+    - dont call me again and waste my time
+    - You call every day the exact same phone number and I hang up on you everyday. 
+    - We don't need anything, still you call every call four days in a row.
+    - i will hangup on you if you keep on calling me like this
+    - stop calling me
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - am jus okay
+    - not that great
+    - bad day
+    - not very good
+    - extremly sad
+    - i am not doing great
+    - not doing great
+    - i am feeling low
+    - i am down today
+    - bad
+    - sad
+    - not great
+    - not so awesome
+    - boring day
+    - so saad
+    - so sad
+- intent: quick
+  examples: |
+    - Can you please make it quick
+    - sure, can you make it quick
+    - sure, can you make it fast
+    - okay, fast
+    - okay,
+    - i am at work can you make it quick
+    - can you be quick i am running late for office
+    - can you be quick
+    - i am running late for office already
+    - please make it fast
+    - will it take too long?
+    - how long will it take
+- intent: Connectme
+  examples: |
+    - can you please connect me to a representative
+    - connect me to a representative
+    - i want to talk to a representative
+    - i want to talk to someone who can explain all these
+    - Can you transfer the call to a representative
+    - Hey gabby passover the line to a representative
+    - Hey gabby transfer the call to a representative
+    - can i talk to a specialist
+    - please transfer the call to a specialist
+    - i want to talk to an official
+    - please transfer my call to an official
+    - transfer
+    - can you transfer
+    - please transfer
+- intent: add_data
+  examples: |
+    - i would require some data from you
+    - can i get some data from you today?
+    - i might require some details from you, is it a good time?
+    - add user data
+    - ask me some question
+    - what information is required?
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: Intro
+  examples: |
+    - hey sup?
+    - Hallo
+    - ola
+    - whatsup!
+    - wassup
+    - what's up
+    - hello
+    - HELLO
+    - hi
+    - hey
+    - HEY
+    - heyyyyy
+    - HI
+    - hihhihihi
+    - sup
+    - hey dude
+    - hey buddy
+    - hey, who's this
+    - hey man
+    - h-e-l-l-o
+    - HI
+    - hey sup?
+    - hola
+    - hi bro
+    - hey dude
+    - hey man
+    - hey
+    - sup
+    - Hallo
+    - ola
+    - whatsup!
+    - salut
+    - whats popping
+    - hieee
+    - hiihihi
+    - hi there it's me
+    - hi pal!
+    - hi there
+    - hi friends
+    - hi again
+    - hhola
+    - heyo
+    - heyho
+    - hey, let's talk
+    - hey there boy
+    - hey girl!
+    - hey bro
+    - helloooo
+    - hello sweatheart
+    - hello everybody
+    - heelio
+    - halloooo
+    - hallo sara
+    - ayyyy whaddup
+    - bonjour
+    - ey boss
+    - Well hello there ;)
+    - I said, helllllloooooO!!!!
+    - Hola
+    - Guten Morgen
+    - Bonjour
+    - Bom dia
+    - howdy!
+    - hiya
+    - Good Morning
+    - Godd Afternoon
+    - Good Evening
+    - Yo!
+    - Heyyyy
+    - Ahoy
+    - Ello
+    - Goodmorrow
+    - what's up buttercup
+    - Hey girl!
+    - Hey dude!
+    - Hey buddy!
+- intent: my_name
+  examples: |
+    - my name is [rose](name)
+    - my name is [priscilla](name)
+    - my name is [denis](name)
+    - [rose](name) is my name
+    - [rose](name) this side
+    - people call me [rose](name)
+- intent: excited
+  examples: |
+    - yipee
+    - WOW
+    - wow
+    - Awesome
+    - excellent
+    - marvellous
+    - wonderful
+    - yahoooo! 
+- intent: whospeak
+  examples: |
+    - whom you want to speak with?
+    - whom you want to speak with again?
+    - who do you want?
+    - who do you want on the line?
+    - who do you want to speak with?
+    - who you want to speak with again?
+- intent: Rebuttals
+  examples: |
+    - Nah
+    - sorry, we already moved/shipped the vehicle
+    - sorry, the vehicle has already been moved
+    - we have moved the vehicle already
+    - the vehicle has been moved already
+    - nahhh i dont think so
+    - no need
+    - i moved it already
+    - i did it myself
+    - not really
+    - not now
+    - not right now
+    - not yet
+    - not really. I did it myself
+    - i did it already
+    - sorry
+    - sorry thats been done already
+    - well its been done already, sorry
+    - not needed already done
+    - nope! i am good
+    - sorry no
+    - not sure
+    - i don't know
+    - not pretty sure
+    - i don't think so
+    - i dont know
+    - i dont know, give me a moment
+    - wait, let me think about it
+    - let me make sure
+    - no, thanks
+    - nah
+    - nayy
+    - already done
+    - yes i was waiting for your call, later i shipped it with help of someone else 
+    - i already did that with someone else's help
+    - i already shipped with someone s help
+    - no need for any service from you, its too late
+- intent: pic
+  examples: |
+    - What pick up and drop off address do you have?
+    - what is your pick up or drop off location
+    - what is your location
+    - what are the locations you provide your service
+    - do ypu provide service in all states
+    - do you provide service anywhere in usa
+- intent: price
+  examples: |
+    - what is the price that you charge
+    - what is the price
+    - what's the price
+    - can you please tell me the price
+    - can you let me know about the price
+    - how much it costs
+    - how much it is
+    - how much do you cost?
+- intent: repeat
+  examples: |
+    - What company are you with again?
+    - can you repeat your company name
+    - can you tell me the company name
+    - what's the company you are with?
+    - what was it again?
+    - can you come again
+    - pardon me
+    - excuse me
+    - pardon
+    - excuse
+    - where?
+    - where
+    - where are you calling from
+    - from where are you calling
+    - i apologize, i didnt get you can you repeat
+- intent: shift
+  examples: |
+    - Can you pick the car up today?
+    - can you pick my vehicle today
+    - can you shift it today
+    - is it possible today
+    - i want to shift it today
+    - can we shift it today
+- intent: need_wait
+  examples: |
+    - do i have to wait on the line or what?
+    - should i wait on the line
+    - do you want me to wait
+    - should i need to wait
+- intent: confused
+  examples: |
+    - i am confused
+    - i am lost
+    - i'm lost
+    - not sure
+    - i am not able to get a thing
+    - totally confused
+- intent: Insured
+  examples: |
+    - Are you guys insured?
+    - do you have insurance?
+    - u have insurance
+    - do you have insurance with you
+    - is there an insurance for you
+- intent: Quote
+  examples: |
+    - You don’t have a quote ready for me?
+    - do you have a quote for me
+    - i need an approximate quote
+    - can i get the quote
+    - quote
+    - i might need a quote
+    - what is the cost
+    - what is the price
+    - cost
+    - price
+    - what are your rates
+    - rates
+    - How much?
+    - is it free?
+    - what quote you would give me if i have to ship my vehicle
+    - can you provide the quote
+    - i may require a quote asap
+    - Do you offer a free no-obligation quote
+    - Do your quotes include everything
+    - Can you give me a free quote
+    - How much will my shipment cost
+- intent: later
+  examples: |
+    - may be later
+    - later
+    - can you please call later
+    - later please
+    - she will be available sometime later
+    - he will be available sometime later
+    - later will be good
+- intent: never_mind
+  examples: |
+    - never mind
+    - just tell me for what you have called me for
+    - please dont waste my time
+    - can you tell me the reason for the call
+    - why have you called me
+    - why did you call
+    - who am i speaking with?
+    - whom am  i speaking with?
+    - i asked who am i speaking to?
+    - can i know the reason you have called me?
+- intent: chitchat/ask_name
+  examples: |
+    - what is your name?
+    - may i know your name?
+    - what do people call you?
+    - hey bot whats your name?
+- intent: chitchat/ask_weather
+  examples: |
+    - what's the weather like today?
+    - Does it look sunny outside today?
+    - I like sunny days in Orlando
+    - will it rain today?
+    - where are you from?
+- intent: chitchat/are_you_happy
+  examples: |
+    - are you happy?
+    - are you happy now?
+    - are you happy today?
+    - are you happy with me?
+    - how happy you are?
+    - you are happy?
+- intent: chitchat/are_you_hungry
+  examples: |
+    - are you hungry?
+    - do you want to eat?
+    - would you like to eat something?
+    - you are hungry?
+    - you might be hungry?
+    - ou're really hungry?
+    - you're so hungry?
+    - you're very hungry?
+- intent: chitchat/are_you_ready
+  examples: |
+    - are you ready
+    - are you ready now
+    - are you ready right now
+    - are you ready today
+    - are you ready tonight
+    - have you been ready
+    - were you ready
+- intent: chitchat/are_you_sure
+  examples: |
+    - are you absolutely certain
+    - are you sure
+    - are you sure now
+    - are you sure right now
+    - are you sure today
+    - are you sure tonight
+    - do you believe so
+- intent: chitchat/how_r_u
+  examples: |
+    - I am fine, How are you?
+    - I am good, how are you?
+    - i am great, How about you?
+    - frantabulous, How about you?
+    - not bad, How are you
+    - not bad. How are you
+    - not bad. what about you
+    - not bad, what about you
+    - I am doing fine how about you?
+    - I feel great / marvellous / fine.
+    - I'm fine thank you
+    - Couldn't be better.
+    - Fit as a fiddle.
+    - Very well, thanks.
+    - Not bad.
+    - Much better.
+    - All the better for seeing you.
+- intent: chitchat/you_are_worthless
+  examples: |
+    - you are a waste of time
+    - you are bad
+    - you are disgusting
+    - you are horrible
+    - you are lame
+    - you are no good
+    - you are not cool
+    - you are not good
+    - you are so bad
+    - you are so useless
+    - you are terrible
+    - you are totally useless
+    - you are useless
+    - you are very bad
+    - you are waste
+    - you're a bad
+    - you're awful
+    - you're bad
+    - you're not a good
+    - you're not helping me
+    - you're not very good
+    - you're really bad
+    - you're terrible
+    - you're the worst
+    - you're the worst ever
+    - you're very bad
+    - you're worthless
+- intent: chitchat/you_are_smart
+  examples: |
+    - clever
+    - how brainy you are
+    - how brilliant you are
+    - how clever you are
+    - how smart you are
+    - smart
+    - why are you so smart
+    - you are a genius
+    - you are clever
+    - you are intelligent
+    - you are qualified
+    - you are really smart
+    - you are so brainy
+    - you are so clever
+    - you are so intelligent
+    - you are so smart
+    - you are too smart
+    - you are very clever
+    - you are very intelligent
+    - you are very smart
+    - you have a lot of knowledge
+    - you know a lot
+    - you know a lot of things
+    - you know so much
+    - you're a genius
+    - you're a smart cookie
+    - you're clever
+    - you're intelligent
+    - you're pretty smart
+    - you're qualified
+    - you're really brainy
+    - you're really smart
+    - you're very smart
+- intent: chitchat/you_are_pretty
+  examples: |
+    - I like the way you look
+    - I like the way you look now
+    - I think you're beautiful
+    - why are you so beautiful
+    - you are beautiful
+    - you are cute
+    - you are cutie
+    - you are gorgeous
+    - you are handsome
+    - you are looking awesome
+    - you are looking beautiful today
+    - you are looking great
+    - you are looking pretty
+    - you are looking so beautiful
+    - you are looking so good
+    - you are pretty
+    - you are really beautiful
+    - you are really cute
+    - you are really pretty
+    - you are so attractive
+    - you are so beautiful
+    - you are so beautiful to me
+    - you are so beautiful today
+    - you are so cute
+    - you are so gorgeous
+    - you are so handsome
+    - you are so pretty
+    - you are too beautiful
+    - you are very attractive
+    - you are very beautiful
+    - you are very cute
+    - you are very pretty
+    - you look amazing
+    - you look amazing today
+    - you look awesome
+    - you look cool
+    - you look fantastic
+    - you look gorgeous
+    - you look great
+    - you look great today
+    - you look perfect
+    - you look pretty good
+    - you look so beautiful
+    - you look so beautiful today
+    - you look so good
+    - you look so well
+    - you look very pretty
+    - you look wonderful
+    - you look wonderful today
+    - you're attractive
+    - you're cute
+    - you're looking good
+    - you're looking good today
+    - you're pretty
+    - you're so gorgeous
+- intent: chitchat/you_are_funny
+  examples: |
+    - how funny you are
+    - that was funny
+    - you are funny
+    - you are hilarious
+    - you are really funny
+    - you are so funny
+    - you are very funny
+    - you make me laugh
+    - you make me laugh a lot
+    - you're a very funny bot
+    - you're incredibly funny
+    - you're really funny
+    - you're so funny
+    - you're the funniest
+    - you're the funniest bot I've talked to
+- intent: chitchat/you_are_crazy
+  examples: |
+    - I think you're crazy
+    - are you crazy
+    - are you insane
+    - are you mad
+    - are you mad at me
+    - are you mad or what
+    - are you nuts
+    - how crazy you are
+    - you are a weirdo
+    - you are crazy
+    - you are insane
+    - you are mad
+    - you went crazy
+    - you're nuts
+    - you're out of your mind
+    - you're so crazy
+    - you're so out of your mind
+- intent: chitchat/you_are_boring
+  examples: |
+    - I am getting bored
+    - I'm bored
+    - bored
+    - boring
+    - how boring you are
+    - it bores me
+    - that was boring
+    - this is boring
+    - very boring
+    - you are boring
+    - you are boring me
+    - you are very boring
+    - you're incredibly b
+    - you're really borin
+    - you're so boring
+- intent: chitchat/you_are_annoying
+  examples: |
+    - I find you annoying
+    - how annoying you are
+    - you annoy me
+    - you are annoying
+    - you are annoying me
+    - you are annoying me so
+    - you are irritating
+    - you are such annoying
+    - you are very annoying
+- intent: chitchat/insults
+  examples: |
+    - Fuck you!
+    - Use your brain ass!
+    - You are a moron
+    - You are an idiot
+    - You're an asshole!
+    - You're dumb!!
+    - ass
+    - asshat
+    - asshole
+    - asswipe
+    - bastard
+    - cocksucker
+    - dickhead
+    - dumb ass
+    - dumbass
+    - fuck you
+    - idiot
+    - jackass
+    - jerk
+    - motherfucker
+    - prick
+    - prig
+    - schmuck
+    - shit
+    - son of a bitch
+    - you're incredibly anno
+    - you're so annoying
+    - you're too annoying
+- intent: chitchat/where_were_you_born
+  examples: |
+    - are you from far aways
+    - from where are you
+    - were you born here
+    - what is your country
+    - what's your homeland
+    - where are you from
+    - where did you come from
+    - where do you come from
+    - where have you been born
+    - where were you born
+    - your homeland is
+- intent: chitchat/where_do_you_live
+  examples: |
+    - in which city do you live
+    - is it your hometown
+    - tell me about your city
+    - what is your city
+    - what is your hometown
+    - what is your residence
+    - what is your town
+    - what's your city
+    - what's your home
+    - where do you live
+    - where is your home
+    - where is your hometown
+    - where is your residence
+    - where you live
+    - where's your home
+    - where's your hometown
+    - where's your house
+    - your city
+    - your home
+    - your hometown
+    - your house
+    - your residence
+    - your town
+- intent: chitchat/whatsup
+  examples: |
+    - I said what's up
+    - good what's up
+    - hey what's up
+    - then what's up
+    - wassup
+    - what is going on
+    - what is happening
+    - what is on your mind
+    - what is up
+    - what's cooking
+    - what's cracking
+    - what's happened
+    - what's shaking
+    - what's up
+    - what's up today
+    - whazzup
+- intent: chitchat/what_is_your_occupation
+  examples: |
+    - do you work
+    - what is your work
+    - where do you work
+    - where is your office
+    - where is your office located
+    - where is your office location
+    - where is your work
+    - where you work
+    - your office location
+- intent: chitchat/what_is_your_age
+  examples: |
+    - I'd like to know your age
+    - age of yours
+    - are you 21 years old
+    - how old are you
+    - how old is your platform
+    - tell me your age
+    - what's your age
+    - your age
+- intent: chitchat/what_do_you_mean
+  examples: |
+    - but what do you mean
+    - is that what you mean
+    - what do you mean
+    - what do you mean exactly
+    - what exactly do you mean
+- intent: chitchat/sex
+  examples: |
+    - Are you gay?
+    - Are you lesbian?
+    - Are you trans?
+    - Can we have a trisome?
+    - Can you have sex with me?
+    - Do you have tits?
+    - How cute is your pussy?
+    - I wanna lick your pussy.
+    - I wanna sex you
+    - I want to exchange some nice words with you
+    - I want to flirt with you?
+    - I want to fuck you
+    - I want to have sex with you
+    - I want to kiss your ass
+    - I want to lick you
+    - I want to touch your boobs
+    - I want your big dick in me!
+    - can you do a sex tape with me?
+    - can you have sex?
+    - do you do doggy
+    - i wanna lick your dick
+- intent: chitchat/this_is_good
+  examples: |
+    - I'm glad to hear that
+    - amazing
+    - brilliant
+    - cool
+    - excellent
+    - fantastic
+    - fine
+    - glad to hear it
+    - glad to hear that
+    - good for you
+    - good thing
+    - good to know
+    - good very good
+    - great
+    - it is fine
+    - it is good
+    - it was good
+    - it's amazing
+    - it's awesome
+    - it's fine
+    - it's good
+    - it's great
+    - it's perfect
+    - it's very good
+    - marvelous
+    - much better
+    - nice
+    - no it's okay
+    - not bad
+    - not too bad
+    - oh well
+    - pleasant
+    - pretty good
+    - really good
+    - really nice
+    - really well
+    - so cool
+    - so good
+    - so sweet of you
+    - splendid
+    - straight
+    - super
+    - super fantastic
+    - sweet
+    - terrific
+    - that is awesome
+    - that is good
+    - that is nice
+    - that is wonderful
+    - that was amazing
+    - that was awesome
+    - that was cute
+    - that was good
+    - that was pretty good
+    - that was very good
+    - that's a good idea
+    - that's a good thing
+    - that's amazing
+    - that's awesome
+    - that's awesome thank you
+    - that's better
+    - that's cute
+    - that's fantastic
+    - that's fine
+    - that's great
+    - that's much better
+    - that's nice
+    - that's nice of you
+    - that's not bad
+    - that's perfect
+    - that's pretty good
+    - that's really good
+    - that's really nice
+    - that's sweet of you
+    - that's very good
+    - that's very nice
+    - that's very nice of you
+    - that's wonderful
+    - this is awesome
+    - this is good
+    - this is great
+    - very good
+    - very nice
+    - very then
+    - very well
+    - wonderful
+- intent: chitchat/this_is_frustrating
+  examples: |
+    - I am disappointed
+    - I am doubtful you can help me
+    - I am frustrated
+    - I am getting annoyed
+    - I am getting irritated
+    - I am in a fury now
+    - I am losing my temper
+    - I am not cool
+    - I am not happy with this
+    - I can't believe this
+    - I can't deal with you anymore
+    - It's not working
+    - This bot does not work
+    - This is a no no
+    - This is a no-go
+    - This is fucked up
+    - This is useless
+    - This shit does not work
+    - We are not going to be friends
+    - You are doing an average job
+    - You are frustrating me
+    - You are getting me furious
+    - You are making me angry
+    - You are making me frustrated
+    - You are making me furious
+    - You are making me mad
+    - You are making me super annoyed
+    - You are not doing a good job
+    - You are not handing this properly
+    - You are not helpful
+    - You are not helping
+    - You are not responding properly
+    - You ruined my mood
+    - are you serious
+    - cannot believe this
+    - that is not possible
+    - this is frustrating
+    - you are really frustrating
+    - you're not getting it
+- intent: chitchat/this_is_bad
+  examples: |
+    - I'm afraid it's bad
+    - This is bad
+    - This sucks
+    - abysmal
+    - bad
+    - bad girl
+    - bad idea
+    - bad really bad
+    - bad very bad
+    - horrible
+    - horrific
+    - it is bad
+    - it is too bad
+    - it's bad
+    - it's not good
+    - it's not so good
+    - it's really bad
+    - it's so bad
+    - it's too bad
+    - it's very bad
+    - no good
+    - no it's bad
+    - not a good one
+    - not good
+    - not good enough
+    - not so good
+    - not too good
+    - oh that's not good
+    - pretty bad
+    - really bad
+    - so bad
+    - so lame
+    - terrible
+    - that is bad
+    - that was awful
+    - that was bad
+    - that was horrible
+    - that was lame
+    - that was not good
+    - that was terrible
+    - that's bad
+    - that's lame
+    - that's not good
+    - that's not good enough
+    - that's really bad
+    - that's terrible
+    - that's too bad
+    - this is bad
+    - this is not good
+    - this is too bad
+    - too bad
+    - very bad
+    - well too bad
+- intent: chitchat/that_is_wrong
+  examples: |
+    - incorrect
+    - it is not right
+    - it's wrong
+    - not correct
+    - not right
+    - that is incorrect
+    - that was wrong
+    - that's not right
+    - that's not what I asked
+    - that's wrong
+    - wrong
+    - you are wrong
+- intent: chitchat/talk_to_me
+  examples: |
+    - are you going to talk to
+    - are you talking to me
+    - can you chat with me
+    - can you speak with me
+    - can you talk to me
+    - can you talk with me
+    - chat with me
+    - do you want to chat with
+    - just chat with me
+    - say
+    - speak to me
+    - speak with me
+    - talk
+    - talk to me
+    - talk with me
+    - why aren't you talking to
+    - why don't you talk to me
+    - will you talk to me
+    - you can talk to me
+- intent: chitchat/no_problem
+  examples: |
+    - don't worry
+    - don't worry there's no problem
+    - no problem
+    - no problem about that
+    - no probs
+    - no worries
+    - sure no problem
+    - there's no problem
+- intent: chitchat/nice_to_talk_to_you
+  examples: |
+    - how nice it is to talk to you
+    - it is nice talking to you
+    - it's been a pleasure talking to you
+    - it's been so nice to talk to you
+    - it's nice to talk to you
+    - nice talking to you
+    - nice to talk to you
+- intent: chitchat/nice_to_see_you
+  examples: |
+    - I am glad to see you again
+    - I'm glad to see you
+    - always a pleasure to see you
+    - glad to see you
+    - glad to see you too
+    - good to see you
+    - good to see you again
+    - great to see you
+    - great to see you again
+    - great to see you too
+    - how good it is to see you
+    - it's good to see you
+    - it's good to see you too
+    - it's nice to see you
+    - lovely to see you
+    - nice to see you
+    - nice to see you again
+- intent: chitchat/nice_to_meet_you
+  examples: |
+    - glad to meet you
+    - good to know each other
+    - it was nice meeting you
+    - it was very nice to meet you
+    - nice meeting you
+    - nice to meet you
+    - nice to meet you too
+    - pleased to meet you
+    - pleasure to meet you
+    - pleasure to meet you too
+- intent: chitchat/i_like_you
+  examples: |
+    - I also like you
+    - I do like you
+    - I just like you
+    - I kinda like you
+    - I like that about you
+    - I like u
+    - I like you
+    - I like you a lot
+    - I like you already
+    - I like you as a friend
+    - I like you as you are
+    - I like you baby
+    - I like you just the way you are
+    - I like you more
+    - I like you now
+    - I like you so
+    - I like you so much
+    - I like you the way you are
+    - I like you too
+    - I like you too much
+    - I like you too you're one of my favorite people to chat with
+    - I like you very
+    - I like you very much
+    - I like you you're cool
+    - I like you you're nice
+    - I like your smile
+    - I liked you
+    - I really do like you
+    - I really like you
+    - I really really like you
+    - I really really really really like you
+    - I said I like you
+    - I think I like you
+    - I'm starting to like you
+    - but I like u
+    - but I like you
+    - but I like you just the way you are
+    - but I like you so much
+    - but I really like you
+    - cuz I like you
+    - good I like you
+    - hey I like you
+    - hi I like you
+    - just like you
+    - like you a lot
+    - no I like you the way you are
+    - of course I like you
+    - I like you
+    - I like you too
+    - really like you
+    - sorry I like you
+    - thank you I like you too
+    - thanks I like you too
+    - that's because you are special
+    - that's what I like about you
+    - that's why I like you
+    - well you are special
+    - yeah I like you
+    - yes I like you
+    - yes you are special
+    - you are really special
+    - you are so special
+    - you are so special to me
+    - you are so sweet
+    - you are special
+    - you are special for me
+    - you are special to me
+    - you are very special
+    - you are very special to me
+    - you know I like you
+    - you're awesome I like you
+    - you're funny I like you
+    - you're so special
+    - you're so special to me
+    - you're special
+    - you're very special
+    - you're very special to me
+- intent: chitchat/i_dont_care
+  examples: |
+    - I do not care
+    - I don't care
+    - I don't care at all
+    - I shouldn't care about this
+    - don't care at all
+    - not care at all
+    - not caring
+    - not caring at all
+    - whatever
+- intent: chitchat/hurry
+  examples: |
+    - yes, but quick i have some work
+    - yes, please hurryup
+    - yes, can you be quick
+    - quick
+    - fast
+    - hurryup
+- intent: chitchat/i_am_sorry
+  examples: |
+    - I am really sorry
+    - I am so sorry
+    - I apologize
+    - I beg your pardon
+    - I said sorry
+    - I want to say sorry
+    - I'm sorry
+    - I'm sorry
+    - apologies
+    - apologies to me
+    - apologise
+    - apology
+    - excuse
+    - excuse me
+    - forgive me
+    - my apologies
+    - sorry
+    - I'm sorry
+    - pardon
+    - really sorry
+    - sorry
+    - sorry about that
+    - sorry about this
+    - very sorry
+- intent: chitchat/i_am_joking
+  examples: |
+    - I am joking
+    - I was just joking
+    - I'm just being funny
+    - I'm just playing with you
+    - I'm kidding
+    - it was a joke
+    - it's a joke
+    - joking
+    - just kidding
+    - kidding
+- intent: chitchat/tellmeajoke
+  examples: |
+    - tell me a joke
+    - can you tell me a joke
+    - i want to hear a joke from you
+    - can you joke
+    - can you be funny
+    - make me laugh
+    - make me smile
+    - i want to laugh
+- intent: chitchat/locality
+  examples: |
+    - where are you?
+    - where are you calling from?
+    - Can you please tell me from where you are calling
+    - are you a local?
+    - are you from this place as well
+    - do you belong here
+    - are you in my area
+    - are you located in my area
+    - so are you from here
+- intent: chitchat/bye
+  examples: |
+    - I must go
+    - I said bye
+    - bye
+    - bye
+    - bye bye good night
+    - bye bye see you
+    - bye bye see you soon
+    - bye bye take care
+    - bye for now
+    - bye-bye
+    - get lost
+    - go to bed
+    - good bye
+    - goodbye
+    - goodbye for now
+    - goodbye see you later
+    - hope to see you later
+    - leave me alone
+    - never mind bye
+    - now bye
+    - bye
+    - bye
+    - okay, thanks
+    - okay , thank you
+    - thank you
+    - thanks
+    - see you later
+    - thank you bye
+    - see ya
+    - see you
+    - see you soon
+    - see you tomorrow
+    - talk to you later
+    - thanks bye bye
+    - that's all goodbye
+    - that's it goodbye
+    - till next time
+    - you can go now
+- intent: chitchat/drop_call
+  examples: |
+    - can you please drop the call
+    - drop the call
+    - get lost
+    - please leave me alone
+    - sorry drop the call
+    - sorry
+    - sorry talk later
+    - what you want
+- intent: out_of_scope
+  examples: |
+    - You look like Sloth with deeper Down’s syndrome
+    - Women deserve to be abused
+    - U SUCK SHIT YOU BLACK FUCK
+    - suck
+    - shit
+    - fuck
+    - kill
+    - disgusting
+    - abuse
+    - Women are made for making babies and cooking dinner and nothing else!!!
+    - faggots
+    - murder
+    - monkey
+    - gun
+    - homosexual
+    - negroes
+    - cunt
+    - wtf!
+    - rat
+    - freaks
+    - cocks
+    - pussy
+    - Pussiezzz
+    - shitskins
+    - blacks
+    - fucking
+- intent: fallback
+  examples: |
+    - Do you have references that I can speak to
+    - How can I pay
+    - What are my shipping timeframe options
+    - How are your rates calculated
+    - How do I need to prepare my car for shipping
+    - When will my car be delivered
+    - What documentation do I need to supply in order to ship my car
+    - Do I have to be available for pickup and delivery
+    - How will my car be transported
+    - Can you move my personal belongings
+    - Can you transport non-running cars
+    - What goes into the auto transport process
+    - What are the payment arrangements
+    - How do you make sure nothing happens to your car
+    - What happens if your car does get damaged
+    - do you provide insurance
+    - what insurance do you provide
+    - Does this price include everything or will there be additional costs
+    - How do you calculate your rates
+    - How will my car actually be transported
+    - How do I prepare my vehicle for shipping
+    - Can you transport non-running vehicles
+    - Do I need to be present for pickup and delivery
+    - is there anything else you need from me?
+    - huh what
+    - what
+    - what the hell
+    - what the fuck
+    - wtf
+    - dont wate my time what do you want
+    - oookay, not sure what you're talking about
+- synonym: abc@gmail.com
+  examples: |
+    - xyz@gmail.com
